@@ -1,0 +1,14 @@
+.cards-existence__item {
+  padding: 15px;
+
+  background-color: rgb(199, 255, 177);
+  outline: 1px solid teal;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.cards-existence__card {
+  // padding: 10px;
+}

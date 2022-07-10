@@ -17,7 +17,11 @@
     <header class="header">
       <div class="container">
         <span class="logo">FamilyLinks</span>
-        <a target="_blank" href="https://github.com/bestua/family-links">
+        <a
+          class="header__link"
+          target="_blank"
+          href="https://github.com/bestua/family-links"
+        >
           <svg width="20" height="25">
             <use href="./assets/images/sprite.svg#icon-github"></use>
           </svg>
@@ -27,24 +31,60 @@
     <!-- Header END -->
 
     <main>
-      <section class="hero">
+      <!-- HERO section -->
+      <section class="hero section">
         <h1 class="hero__title">Family links</h1>
       </section>
 
-      <div class="container">
-        <img
-          src="./assets/images/slonienabalk2022.jpg"
-          alt="Schedule clinic visits by SlonieNaBalkonie"
-          width="100%"
-        />
-      </div>
+      <!-- REMEMBER section -->
+      <section class="remember section section--odd">
+        <div class="container">
+          <h2>Remember</h2>
+          <p style="color: red">
+            <b>Mosir</b> card with sum about 8 zl till aug. 07
+          </p>
+        </div>
+      </section>
+
+      <!-- SCHEDULE section -->
+      <section class="schedule section">
+        <div class="container">
+          <h2>Schedules</h2>
+          <img
+            class="schedule__slonie-na-balkonie"
+            src="./assets/images/schedules/slonienabalk2022.jpg"
+            alt="Schedule clinic visits by SlonieNaBalkonie"
+            width="200px"
+          />
+        </div>
+      </section>
+
+      <!-- CARD-EXISTENCE section -->
+      <section class="cards-existence section section--odd">
+        <div class="container">
+          <h2>There are some cards/discounts:</h2>
+          <ul class="cards-existence__list list">
+            <li class="cards-existence__item">Med. EKUZ card (pol)</li>
+            <li class="cards-existence__item">
+              <div class="cards-existence__card">
+                <img
+                  src="./assets/images/cards-discount/Bilet-wstepu-do-museum.jpg"
+                  alt="Bilet-wstepu-do-museum"
+                  width="200px"
+                />
+                <h3>Bilet wstępu do Muzeum Złotej Rybki 2022/2023/2024</h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     <!-- Footer START -->
     <footer class="footer">
       <div class="container">
         <span class="footer__copyright"
-          >&copy;Copyright (c) reserved by FamilyLinks
+          >&copy; Copyright (c) reserved by FamilyLinks
         </span>
       </div>
     </footer>

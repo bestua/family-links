@@ -7,6 +7,10 @@ img {
   height: auto;
 }
 
+.list {
+  list-style: none;
+}
+
 .container {
   padding: 0 20px;
   margin: 0 auto;
@@ -30,6 +34,15 @@ img {
   }
 }
 
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.section--odd {
+  background-color: #ebe9ff;
+}
+
 .logo {
   font-size: 34px;
 }
@@ -48,14 +61,33 @@ img {
   align-items: center;
 }
 
+.header__link {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .hero__title {
   text-align: center;
   font-size: 44px;
   color: #2c2c2c;
 }
 
+.schedule__slonie-na-balkonie {
+  outline: 3px solid tomato;
+}
+
+.cards-existence__item {
+  padding: 15px;
+  background-color: #c7ffb1;
+  outline: 1px solid teal;
+}
+
+.cards-existence__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 .footer__copyright {
-  text-align: center;
+  display: block;
   padding-top: 20px;
   padding-bottom: 20px;
 }

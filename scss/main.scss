@@ -2,10 +2,10 @@
 // @import './utils/variables';
 // @import './utils/utils';
 
-// basic
+// base
 @import './base/common';
 @import './base/container';
-// @import './base/section';
+@import './base/section';
 
 // components
 @import './components/logo';
@@ -13,4 +13,6 @@
 // layouts
 @import './layouts/header';
 @import './layouts/hero';
+@import './layouts/schadule';
+@import './layouts/cards-existence';
 @import './layouts/footer';
