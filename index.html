@@ -36,7 +36,7 @@
         <h1 class="hero__title">Family links</h1>
       </section>
 
-      <!-- REMEMBER section -->
+      <!-- REMEMBER section S T A R T-->
       <section class="remember section section--odd">
         <div class="container">
           <h2>Remember</h2>
@@ -45,21 +45,38 @@
           </p>
         </div>
       </section>
+      <!-- REMEMBER section E N D-->
 
-      <!-- SCHEDULE section -->
+      <!-- SCHEDULE section S T A R T-->
       <section class="schedule section">
         <div class="container">
           <h2>Schedules</h2>
           <img
-            class="schedule__slonie-na-balkonie"
+            class="zoom-in"
             src="./assets/images/schedules/slonienabalk2022.jpg"
             alt="Schedule clinic visits by SlonieNaBalkonie"
             width="200px"
+            data-open-modal1
           />
         </div>
-      </section>
 
-      <!-- CARD-EXISTENCE section -->
+        <!-- modal "Schedule clinic visits by SlonieNaBalkonie" -->
+        <div class="backdrop backdrop--is-hidden1" data-backdrop1>
+          <div class="modal">
+            <div class="modal__content-container">
+              <button class="close-btn" data-close-modal1>&#10539;</button>
+              <img
+                class="modal__img"
+                src="./assets/images/schedules/slonienabalk2022.jpg"
+                alt="Schedule clinic visits by SlonieNaBalkonie"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SCHEDULE section E N D-->
+
+      <!-- CARD-EXISTENCE section S T A R T-->
       <section class="cards-existence section section--odd">
         <div class="container">
           <h2>There are some cards/discounts:</h2>
@@ -68,16 +85,33 @@
             <li class="cards-existence__item">
               <div class="cards-existence__card">
                 <img
+                  class="zoom-in"
                   src="./assets/images/cards-discount/Bilet-wstepu-do-museum.jpg"
                   alt="Bilet-wstepu-do-museum"
                   width="200px"
+                  data-open-modal2
                 />
                 <h3>Bilet wstępu do Muzeum Złotej Rybki 2022/2023/2024</h3>
               </div>
             </li>
           </ul>
         </div>
+
+        <!-- MODAL "Bilet-wstepu-do-museum" -->
+        <div class="backdrop backdrop--is-hidden2" data-backdrop2>
+          <div class="modal">
+            <div class="modal__content-container">
+              <button class="close-btn" data-close-modal2>&#10539;</button>
+              <img
+                class="modal__img"
+                src="./assets/images/cards-discount/Bilet-wstepu-do-museum.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
       </section>
+      <!-- CARD-EXISTENCE section E N D -->
     </main>
 
     <!-- Footer START -->
@@ -89,5 +123,7 @@
       </div>
     </footer>
     <!-- Footer END -->
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>

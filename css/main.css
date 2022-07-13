@@ -47,6 +47,69 @@ img {
   font-size: 34px;
 }
 
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 250ms opacity linear;
+}
+
+.backdrop--is-hidden1,
+.backdrop--is-hidden2 {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+  background-color: transparent;
+  opacity: 1;
+}
+
+.modal__content-container {
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.modal__img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.close-btn {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  display: block;
+  width: 60px;
+  height: 60px;
+  padding: 8px;
+  font-size: 30px;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 250ms color linear, 250ms background-color linear;
+}
+
+.close-btn:hover {
+  color: teal;
+  background-color: #fff;
+  border: 1px solid teal;
+}
+
 .header {
   position: fixed;
   left: 0;
@@ -72,10 +135,6 @@ img {
   color: #2c2c2c;
 }
 
-.schedule__slonie-na-balkonie {
-  outline: 3px solid tomato;
-}
-
 .cards-existence__item {
   padding: 15px;
   background-color: #c7ffb1;
@@ -90,5 +149,9 @@ img {
   display: block;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.zoom-in {
+  cursor: zoom-in;
 }
 /*# sourceMappingURL=main.css.map */

@@ -9,10 +9,16 @@
 
 // components
 @import './components/logo';
+@import './components/modal';
+@import './components/close-btn';
 
 // layouts
 @import './layouts/header';
 @import './layouts/hero';
-@import './layouts/schadule';
+@import './layouts/schedule';
 @import './layouts/cards-existence';
+@import './layouts/schedule';
 @import './layouts/footer';
+
+// utils
+@import './utils/utils';
