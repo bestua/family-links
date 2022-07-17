@@ -11,6 +11,15 @@ img {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  opacity: 0.8;
+}
+
 .container {
   padding: 0 20px;
   margin: 0 auto;
