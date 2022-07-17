@@ -154,6 +154,10 @@ a:focus {
   margin-bottom: 10px;
 }
 
+.footer {
+  border-top: 1px solid #969696;
+}
+
 .footer__copyright {
   display: block;
   padding-top: 20px;
