@@ -4,3 +4,43 @@
   font-size: 44px;
   color: #2c2c2c;
 }
+
+.hero-list {
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    outline: 1px solid #b6b6b6;
+  }
+
+  &__link {
+    display: block;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+
+    color: black;
+
+    border-right: 1px solid #b6b6b6;
+
+    &:hover,
+    &:focus {
+      background-color: rgb(245, 245, 245);
+    }
+  }
+
+  &__gh {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    &:hover,
+    &:focus {
+      background-color: rgb(245, 245, 245);
+    }
+  }
+}

@@ -144,6 +144,38 @@ a:focus {
   color: #2c2c2c;
 }
 
+.hero-list__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  outline: 1px solid #b6b6b6;
+}
+
+.hero-list__link {
+  display: block;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  color: black;
+  border-right: 1px solid #b6b6b6;
+}
+
+.hero-list__link:hover, .hero-list__link:focus {
+  background-color: whitesmoke;
+}
+
+.hero-list__gh {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.hero-list__gh:hover, .hero-list__gh:focus {
+  background-color: whitesmoke;
+}
+
 .cards-existence__item {
   padding: 15px;
   background-color: #c7ffb1;
