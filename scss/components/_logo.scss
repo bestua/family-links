@@ -1,4 +1,9 @@
 .logo {
+  color: var(--main-color);
   font-size: 34px;
   // background-color: rgb(128, 218, 218);
+
+  &__current {
+    color: tomato;
+  }
 }

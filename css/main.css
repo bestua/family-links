@@ -53,7 +53,12 @@ a:focus {
 }
 
 .logo {
+  color: var(--main-color);
   font-size: 34px;
+}
+
+.logo__current {
+  color: tomato;
 }
 
 .backdrop {
@@ -138,6 +143,10 @@ a:focus {
   padding-bottom: 10px;
 }
 
+.nav__sec a:not(:last-child) {
+  margin-right: 20px;
+}
+
 .hero__title {
   text-align: center;
   font-size: 44px;
@@ -198,5 +207,9 @@ a:focus {
 
 .zoom-in {
   cursor: zoom-in;
+}
+
+:root {
+  --main-color: #2c2c2c;
 }
 /*# sourceMappingURL=main.css.map */
