@@ -17,19 +17,37 @@
     <header class="header">
       <div class="container">
         <a href="./index.html" class="logo">FamilyLinks</a>
-        <div class="nav__sec">
-          <a class="logo__current" href="./index.html">Home</a>
-          <a href="./archive.html">Archive</a>
-        </div>
-        <a
-          class="header__link"
-          target="_blank"
-          href="https://github.com/bestua/family-links"
-        >
-          <svg width="20" height="25">
-            <use href="./assets/images/sprite.svg#icon-github"></use>
+
+        <button type="button" class="menu-button" data-menu-button>
+          <svg width="40" height="40" aria-label="Mobile menu switch">
+            <use
+              class="icon-menu"
+              href="./assets/images/sprite.svg#icon-menu"
+            ></use>
+            <use
+              class="icon-close"
+              href="./assets/images/sprite.svg#icon-close"
+            ></use>
           </svg>
-        </a>
+        </button>
+
+        <div class="mob-menu-container" data-menu>
+          <!--  -->
+          <div class="nav__sec">
+            <a class="current--tomato" href="./index.html">Home</a>
+            <a href="./archive.html">Archive</a>
+          </div>
+          <a
+            class="header__link"
+            target="_blank"
+            href="https://github.com/bestua/family-links"
+          >
+            <svg width="20" height="25">
+              <use href="./assets/images/sprite.svg#icon-github"></use>
+            </svg>
+          </a>
+          <!--  -->
+        </div>
       </div>
     </header>
     <!-- Header END -->
@@ -69,20 +87,11 @@
         <div class="container">
           <div class="calendar">
             <h2>Calendar</h2>
+            <h3>2022</h3>
             <ul>
-              <li>
-                <h3>August:</h3>
-                <ul>
-                  <li>19.08.2022 at 12:30 Piotrkowska 103</li>
-                  <li>26.08.2022 at 16:00 Ambroz</li>
-                  <li>29.08, 31.08 at 17:00 BALET, 02.09 at 17:00??</li>
-                </ul>
-              </li>
               <li>
                 <h3>September:</h3>
                 <ul>
-                  <li><b style="color: red">05.09.2022 at 15:30 ???</b></li>
-                  <li>06.09.2022 at 15:00 Petrowska</li>
                   <li>
                     22.09.2022 at 10:10 Ortopeda visiting (SALVE), Rzgówska 50a,
                     lek. Rymer
@@ -95,64 +104,46 @@
                   <li>12.10.2022 at 11:20 SALVE - derm</li>
                 </ul>
               </li>
+              <li>
+                <h3>November</h3>
+                <ul>
+                  <li>14.11.2022 at 16:30 alergology <b>(CHECK TIME)</b></li>
+                </ul>
+              </li>
+            </ul>
+
+            <h3>2023</h3>
+            <ul>
+              <li>
+                <h3>February:</h3>
+                <ul>
+                  <li>07.02.2023 Petrowska</li>
+                </ul>
+              </li>
             </ul>
           </div>
 
           <div class="asap">
             <h2>ASAP/Today</h2>
             <ul>
-              <li>PB card, pay once a minimum</li>
-              <li>MOSIR card</li>
               <li>300x2times</li>
-              <li>ZWROT kwoty (pokrowce) do allegro</li>
-              <li>05.09??????</li>
             </ul>
           </div>
         </div>
       </section>
 
       <!-- REMEMBER section S T A R T-->
-      <section class="remember section">
+      <section class="remember section section--hide">
         <div class="container">
           <h2>Remember</h2>
-          <p style="color: red">
-            <b>Mosir</b> card with sum about 8 zl till aug. 07
-            <span style="color: #2c2c2c"
-              >(add to section "There are some cards/discounts" two waterfall
-              discount cards links from google drive f.e. till building
-              authorization of this site, after developing authorization put
-              this cards here for authorized user )</span
-            >
-          </p>
         </div>
       </section>
       <!-- REMEMBER section E N D-->
 
       <!-- SCHEDULE section S T A R T-->
-      <section class="schedule section section--odd">
+      <section class="schedule section section--odd section--hide">
         <div class="container">
           <h2>Schedules</h2>
-          <img
-            class="zoom-in"
-            src="./assets/images/schedules/slonienabalk2022.jpg"
-            alt="Schedule clinic visits by SlonieNaBalkonie"
-            width="200px"
-            data-open-modal1
-          />
-        </div>
-
-        <!-- modal "Schedule clinic visits by SlonieNaBalkonie" -->
-        <div class="backdrop backdrop--is-hidden1" data-backdrop1>
-          <div class="modal">
-            <div class="modal__content-container">
-              <button class="close-btn" data-close-modal1>&#10539;</button>
-              <img
-                class="modal__img"
-                src="./assets/images/schedules/slonienabalk2022.jpg"
-                alt="Schedule clinic visits by SlonieNaBalkonie"
-              />
-            </div>
-          </div>
         </div>
       </section>
       <!-- SCHEDULE section E N D-->
@@ -162,6 +153,23 @@
         <div class="container">
           <h2>There are some cards/discounts:</h2>
           <ul class="cards-existence__list list">
+            <li class="cards-existence__item">
+              <!--  -->
+              <!--  -->
+              <!--  -->
+              <p style="color: red">
+                <b>Mosir</b> card with sum about 8 zl till aug. 07
+                <span style="color: #2c2c2c"
+                  >(add to section "There are some cards/discounts" two
+                  waterfall discount cards links from google drive f.e. till
+                  building authorization of this site, after developing
+                  authorization put this cards here for authorized user )</span
+                >
+              </p>
+              <!--  -->
+              <!--  -->
+              <!--  -->
+            </li>
             <li class="cards-existence__item">Med. EKUZ card (pol)</li>
             <li class="cards-existence__item">
               Zawsze aktualna lista parametów na
@@ -285,5 +293,6 @@
     <!-- Footer END -->
 
     <script src="./js/modal.js"></script>
+    <script src="./js/burger-menu.js"></script>
   </body>
 </html>

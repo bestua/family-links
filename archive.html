@@ -16,19 +16,37 @@
     <header class="header">
       <div class="container">
         <a href="./index.html" class="logo">FamilyLinks</a>
-        <div class="nav__sec">
-          <a href="./index.html">Home</a>
-          <a class="logo__current" href="./archive.html">Archive</a>
-        </div>
-        <a
-          class="header__link"
-          target="_blank"
-          href="https://github.com/bestua/family-links"
-        >
-          <svg width="20" height="25">
-            <use href="./assets/images/sprite.svg#icon-github"></use>
+
+        <button type="button" class="menu-button" data-menu-button>
+          <svg width="40" height="40" aria-label="Mobile menu switch">
+            <use
+              class="icon-menu"
+              href="./assets/images/sprite.svg#icon-menu"
+            ></use>
+            <use
+              class="icon-close"
+              href="./assets/images/sprite.svg#icon-close"
+            ></use>
           </svg>
-        </a>
+        </button>
+
+        <div class="mob-menu-container" data-menu>
+          <!--  -->
+          <div class="nav__sec">
+            <a href="./index.html">Home</a>
+            <a class="current--tomato" href="./archive.html">Archive</a>
+          </div>
+          <a
+            class="header__link"
+            target="_blank"
+            href="https://github.com/bestua/family-links"
+          >
+            <svg width="20" height="25">
+              <use href="./assets/images/sprite.svg#icon-github"></use>
+            </svg>
+          </a>
+          <!--  -->
+        </div>
       </div>
     </header>
     <!-- Header END -->
@@ -43,13 +61,54 @@
 
           <ul>
             <li>
+              <h3>August:</h3>
               <ul>
-                <h3>August:</h3>
                 <li>12.08.2022 at 10:30 Derma</li>
+                <li>19.08.2022 at 12:30 Piotrkowska 103</li>
+                <li>26.08.2022 at 16:00 Ambroz</li>
+                <li>29.08, 31.08 at 17:00 BALET, 02.09 at 18:00</li>
+              </ul>
+            </li>
+            <li>
+              <h3>September:</h3>
+              <ul>
+                <li>05.09.2022 at 15:30 alerg</li>
+                <li>06.09.2022 at 15:00 Petrowska</li>
               </ul>
             </li>
           </ul>
         </div>
+      </section>
+
+      <section>
+        <!--  -->
+        <div class="container">
+          <h2>Some old schedules</h2>
+          <img
+            class="zoom-in"
+            src="./assets/images/schedules/slonienabalk2022.jpg"
+            alt="Schedule clinic visits by SlonieNaBalkonie"
+            width="200px"
+            data-open-modal1
+          />
+        </div>
+
+        <!-- modal "Schedule clinic visits by SlonieNaBalkonie" -->
+        <div class="backdrop backdrop--is-hidden1" data-backdrop1>
+          <div class="modal">
+            <div class="modal__content-container">
+              <button class="close-btn" data-close-modal1>&#10539;</button>
+              <img
+                class="modal__img"
+                src="./assets/images/schedules/slonienabalk2022.jpg"
+                alt="Schedule clinic visits by SlonieNaBalkonie"
+              />
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <!--  -->
+        <!--  -->
       </section>
     </main>
 
@@ -62,5 +121,7 @@
       </div>
     </footer>
     <!-- Footer END -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/burger-menu.js"></script>
   </body>
 </html>
