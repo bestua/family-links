@@ -1,0 +1,16 @@
+.sites__dumplings {
+  margin-top: 10px;
+
+  li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.site__dumplings-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  :not(:last-child) {
+    margin-right: 10px;
+  }
+}
