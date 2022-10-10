@@ -1,3 +1,5 @@
-.calendar .container {
-  display: flex;
+.calendar__set {
+  @media (min-width: 480px) {
+    display: flex;
+  }
 }
