@@ -214,8 +214,14 @@ a:focus {
 
 .hero__title {
   text-align: center;
-  font-size: 44px;
+  font-size: 36px;
   color: #2c2c2c;
+}
+
+@media screen and (min-width: 480px) {
+  .hero__title {
+    font-size: 44px;
+  }
 }
 
 .hero-list__item {
@@ -264,6 +270,16 @@ a:focus {
 
 .cards-existence__item:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.card-existence__link {
+  outline: 1px solid red;
+}
+
+@media screen and (max-width: 480px) {
+  .card-existence__link {
+    font-size: 0.8em;
+  }
 }
 
 @media (min-width: 480px) {

@@ -9,6 +9,9 @@
   }
 }
 
-.cards-existence__card {
-  // padding: 10px;
+.card-existence__link {
+  outline: 1px solid red;
+  @media screen and (max-width: 480px) {
+    font-size: 0.8em;
+  }
 }

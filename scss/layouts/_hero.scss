@@ -1,8 +1,11 @@
 .hero__title {
   text-align: center;
-
-  font-size: 44px;
+  font-size: 36px;
   color: #2c2c2c;
+
+  @media screen and (min-width: 480px) {
+    font-size: 44px;
+  }
 }
 
 .hero-list {
