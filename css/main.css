@@ -11,6 +11,10 @@ img {
   list-style: none;
 }
 
+.list__padding0 {
+  padding: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -262,6 +266,18 @@ a:focus {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .calendar__set {
+    justify-content: space-between;
+  }
+}
+
+.asap {
+  border-radius: 10px;
+  padding: 5px;
+  outline: 3px solid #fccac2;
+}
+
 .cards-existence__item {
   padding: 15px;
   background-color: #c7ffb1;
@@ -270,10 +286,6 @@ a:focus {
 
 .cards-existence__item:not(:last-child) {
   margin-bottom: 10px;
-}
-
-.card-existence__link {
-  outline: 1px solid red;
 }
 
 @media screen and (max-width: 480px) {
@@ -286,6 +298,18 @@ a:focus {
   .calendar__set {
     display: flex;
   }
+}
+
+@media screen and (min-width: 1200px) {
+  .calendar__set {
+    justify-content: space-between;
+  }
+}
+
+.asap {
+  border-radius: 10px;
+  padding: 5px;
+  outline: 3px solid #fccac2;
 }
 
 .sites__dumplings {

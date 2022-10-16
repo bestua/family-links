@@ -2,4 +2,14 @@
   @media (min-width: 480px) {
     display: flex;
   }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+  }
+}
+
+.asap {
+  border-radius: 10px;
+  padding: 5px;
+  outline: 3px solid rgb(252, 202, 194);
 }

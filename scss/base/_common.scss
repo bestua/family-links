@@ -9,6 +9,10 @@ img {
 
 .list {
   list-style: none;
+
+  &__padding0 {
+    padding: 0;
+  }
 }
 
 a {
@@ -18,4 +22,7 @@ a {
 a:hover,
 a:focus {
   opacity: 0.8;
+}
+
+ul {
 }
