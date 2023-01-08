@@ -235,6 +235,10 @@ a:focus {
   outline: 1px solid #b6b6b6;
 }
 
+.hero-list__item-glov {
+  outline: none;
+}
+
 .hero-list__link {
   display: block;
   width: 100%;
