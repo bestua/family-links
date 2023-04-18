@@ -316,6 +316,12 @@ a:focus {
   outline: 3px solid #fccac2;
 }
 
+.year-planning__day-separating {
+  max-width: 280px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .sites__dumplings {
   margin-top: 10px;
 }
